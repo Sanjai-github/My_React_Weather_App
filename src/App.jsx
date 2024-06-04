@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div className='w-full h-screen text-white px-8'>
-      <nav className='w-full p-3 flex justify-between items-center'>
-        <h1 className='glassCard w-[20rem] h-[6rem] p-4 flex flex-col font-bold text-center tracking-wide text-3xl'>SANJAI WEATHER APP</h1>
+      <nav className='w-full pl-0 flex justify-between items-center'>
+        <h1 className='glassCard w-[20rem] h-[6rem] p-4 flex flex-col font-bold text-center tracking-wide text-2xl'>SANJAI WEATHER APP</h1>
         <div className='bg-white w-[15rem] overflow-hidden shadow-2xl rounded flex items-center p-2 gap-2'>
           <img src={search} alt="search" className='w-[1.5rem] h-[1.5rem]' />
           <input onKeyUp={(e) => {
