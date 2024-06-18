@@ -7,7 +7,7 @@ import { BackgroundLayout, WeatherCard, MiniCard } from './Components'
 function App() {
 
   const [input, setInput] = useState('')
-  const { weather, thisLocation, values, place, setPlace } = useStateContext()
+  const { weather, thisLocation, values, setPlace } = useStateContext()
  
   const submitCity = () => {
     setPlace(input)
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className='w-full h-screen text-white px-8'>
       <nav className='w-full pl-0 flex justify-between items-center'>
-        <h1 className='glassCard w-[20rem] h-[6rem] p-4 flex flex-col font-bold text-center tracking-wide text-2xl'>SANJAI WEATHER APP</h1>
+        <h1 className='glassCard-sm w-[20rem] h-[6rem] p-4 flex flex-col font-bold text-center tracking-wide text-2xl text-grey-200'>SANJAI&apos;s   <br /> WEATHER APP</h1>
         <div className='bg-white w-[15rem] overflow-hidden shadow-2xl rounded flex items-center p-2 gap-2'>
           <img src={search} alt="search" className='w-[1.5rem] h-[1.5rem]' />
           <input onKeyUp={(e) => {
